@@ -1,0 +1,63 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  color: #3e3e46;
+  background-color: #e3e3e7;
+  font-family: 'Open Sans', sans-serif;
+  max-width: 1200px;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+}
+
+header {
+  padding: 12px;
+  display: flex;
+  align-items: center;
+}
+
+header .brand {
+  margin-left: 8px;
+  width: 200px;
+}
+
+header .button-drawer {
+  width: 44px;
+  height: 44px;
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  color: black;
+}
+
+header > .drawer {
+  position: fixed;
+  width: 200px;
+  height: 100vh;
+  top: 0;
+  left: -250px;
+  ackground-color: #2c3d50;
+  transition: 0.3s ease-in-out left;
+}
+
+header > .drawer > .navigations > .navigation-item > a {
+  color: white;
+  display: inline-block;
+  width: 100%;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+header > .drawer.open {
+  left: 0;
+}
