@@ -190,7 +190,54 @@ main > .cart-container > .cart > .cart-order-button {
   body {
     margin: 32px auto 0 auto;
   }
+
   main {
     grid-template-columns: 2fr 1fr;
+  }
+
+  main > .pizza-container > .pizza {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  main > .cart-container {
+    margin-top: 38px;
+  }
+
+  .button-drawer {
+    display: none;
+  }
+
+  header > .drawer {
+    position: static;
+    height: auto;
+    flex: 1;
+    background-color: transparent;
+    text-align: right;
+  }
+
+  header > .drawer > .navigations > .navigation-item {
+    display: inline-block;
+    margin: 0 6px;
+  }
+
+  header > .drawer > .navigations > .navigation-item > a {
+    color: #3e3e46;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .active {
+    background-color: #f59e0a;
+    border-radius: 8px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  main > .pizza-container > .pizza {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  header > .drawer > .navigations > .navigation-item {
+    margin: 0 12px;
   }
 }
